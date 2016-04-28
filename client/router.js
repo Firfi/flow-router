@@ -390,7 +390,8 @@ Router.prototype.initialize = function(options) {
   this._page.base(this._basePath);
   this._page({
     decodeURLComponents: true,
-    hashbang: !!options.hashbang
+    hashbang: !!options.hashbang,
+    click: options.click
   });
 
   this._initialized = true;
